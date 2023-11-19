@@ -16,13 +16,13 @@ test.describe("Home", () => {
     );
   });
 
-  // test.skip("Open About page and verify title", async ({ page }) => {
-  //   // open url
-  //   await page.goto("https://practice.sdetunicorns.com/about");
+  test("Open About page and verify title", async ({ page }) => {
+    // open url
+    await page.goto("https://practice.sdetunicorns.com/failingtest");
 
-  //   // verify title
-  //   await expect(page).toHaveTitle("About – Practice E-Commerce Site");
-  // });
+    // verify title
+    await expect(page).toHaveTitle("About – Practice E-Commerce Site");
+  });
 
   test("Click get started button using CSS selector", async ({ page }) => {
     await expect(page).not.toHaveURL(/.*#get-started/);
