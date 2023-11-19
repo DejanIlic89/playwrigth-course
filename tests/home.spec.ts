@@ -18,7 +18,7 @@ test.describe("Home", () => {
 
   test("Open About page and verify title", async ({ page }) => {
     // open url
-    await page.goto("https://practice.sdetunicorns.com/failingtest");
+    await page.goto("https://practice.sdetunicorns.com/about");
 
     // verify title
     await expect(page).toHaveTitle("About – Practice E-Commerce Site");
