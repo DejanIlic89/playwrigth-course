@@ -33,6 +33,7 @@ export default defineConfig({
     trace: "retain-on-failure",
 
     storageState: "loggedInState.json",
+    headless: true
   },
 
   /* Maximum time one test can run for. */
